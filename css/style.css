@@ -773,6 +773,13 @@ h6 {
   max-width: 819px;
 }
 
+.main-home__content picture {
+  position: absolute;
+  right: 0;
+  width: auto;
+  height: 432px;
+}
+
 .main-home__content img {
   position: absolute;
   right: 0;
@@ -876,6 +883,11 @@ h6 {
           align-items: center;
   height: 200px;
   padding: 20px;
+}
+
+.programs__column picture {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .programs__column img {
@@ -1762,6 +1774,12 @@ h6 {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     max-width: 100%;
+  }
+
+  .main-home__content picture {
+    position: relative;
+    height: 100%;
+    margin: 0px 0px 10px 0px;
   }
 
   .main-home__content img {
