@@ -773,22 +773,18 @@ h6 {
   max-width: 819px;
 }
 
-.main-home__content picture {
-  position: absolute;
-  right: 0;
-  width: auto;
-  height: 432px;
-}
-
-.main-home__content img {
-  position: absolute;
-  right: 0;
-  width: auto;
-  height: 432px;
-}
-
 .main-home__content .p {
   max-width: 638px;
+}
+
+.main-home__image {
+  position: absolute;
+  right: 0;
+}
+
+.main-home__image img {
+  width: auto;
+  height: 432px;
 }
 
 .services {
@@ -1776,16 +1772,13 @@ h6 {
     max-width: 100%;
   }
 
-  .main-home__content picture {
+  .main-home__image {
     position: relative;
-    height: 100%;
     margin: 0px 0px 10px 0px;
   }
 
-  .main-home__content img {
-    position: relative;
+  .main-home__image img {
     height: 100%;
-    margin: 0px 0px 10px 0px;
   }
 
   .services__content {
