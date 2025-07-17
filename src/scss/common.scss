@@ -1,0 +1,215 @@
+.title1 {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    @media (max-width: $tablet) {
+        font-size: 42px;
+    }
+    @media (max-width: $mobile) {
+        font-size: 36px;
+    }
+    @media (max-width: $mobileSmall) {
+        font-size: 32px;
+    }
+}
+
+.title2 {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+    @media (max-width: $tablet) {
+        font-size: 32px;
+    }
+    @media (max-width: $mobile) {
+        font-size: 26px;
+    }
+}
+
+.p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: #7e7e7e;
+    span {
+        color: $mainColor;
+    }
+    @media (max-width: $mobile) {
+        font-size: 16px;
+    }
+}
+
+.p-strong {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    @media (max-width: $mobile) {
+        font-size: 14px;
+    }
+}
+
+.p-small {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #7e7e7e;
+    @media (max-width: $mobile) {
+        font-size: 12px;
+    }
+}
+
+.heading-titles {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    .title1 {
+        margin: 0px 0px 20px 0px;
+        @media (max-width: $mobile) {
+            margin: 0px 0px 10px 0px;
+        }
+    }
+    .title2 {
+        margin: 0px 0px 20px 0px;
+        @media (max-width: $mobile) {
+            margin: 0px 0px 10px 0px;
+        }
+    }
+    .text {
+        p {
+            margin: 0px 0px 15px 0px;
+            &:last-child {
+                margin: 0px 0px 0px 0px;
+            }
+        }
+    }
+    .button {
+        margin: 60px 0px 0px 0px;
+        @media (max-width: $mobile) {
+            margin: 30px 0px 0px 0px;
+        }
+    }
+}
+
+.heading {
+    margin: 0px 0px 60px 0px;
+    @media (max-width: $mobile) {
+        margin: 0px 0px 30px 0px;
+    }
+    .p {
+        max-width: 588px;
+        margin: 20px 0px 0px 0px;
+        @media (max-width: $mobile) {
+            margin: 10px 0px 0px 0px;
+        }
+    }
+}
+
+.descr {
+    // .descr__container
+
+    &__container {
+    }
+
+    // .descr__content
+
+    &__content {
+    }
+    // .descr__top
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        @media (max-width: $tablet) {
+            flex-direction: column;
+        }
+        .heading-titles {
+            flex: 0 1 860px;
+            @media (max-width: $tablet) {
+                flex: 1 1 auto;
+            }
+        }
+    }
+
+    // .descr__bottom
+
+    &__bottom {
+        display: flex;
+        gap: 24px;
+        margin: 60px 0px 0px 0px;
+        @media (max-width: $mobile) {
+            margin: 30px 0px 0px 0px;
+            flex-direction: column;
+            gap: 15px;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    // .descr__image
+
+    &__image {
+        flex: 0 1 50%;
+        @media (max-width: $mobile) {
+            flex: 1 1 auto;
+        }
+    }
+
+    .image {
+        flex: 0 1 417px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: $tablet) {
+            display: none;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}
+
+.form__error {
+    color: #f31111;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 2px 0px 0px 0px;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    a {
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        flex: 0 1 auto;
+        font-weight: 600;
+        font-size: 16px;
+        transition: opacity 0.3s ease 0s;
+        &:hover {
+            opacity: 0.7;
+        }
+        span {
+            display: block;
+            margin: 0px 0px 0px 8px;
+        }
+    }
+}
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    a {
+        flex: 0 1 auto;
+    }
+}
